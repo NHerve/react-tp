@@ -3,13 +3,15 @@ import './App.css';
 
 function App() {
 
-  const name = 'toto';
-  const avatar = 'path';
-  const online = true;
+  const test = {
+    name:'toto',
+    avatar : 'path',
+    online : true
+  }
   
     return (
         <div className="person-item">
-          <label>{online?'online':'offline'}</label>
+          <label>{test.online?'online':'offline'}</label>
         </div>
     );
 }
