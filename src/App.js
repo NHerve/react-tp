@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Contact from './Components/Contact'
+import ContactList from './Components/ContactList'
 
 class App extends Component {
 
@@ -22,14 +22,7 @@ class App extends Component {
 
   render(){
     return (
-        <div>
-          <div className='person-item'>
-            <Contact contact={this.state.ctx[0]}/>
-          </div>
-          <div className='person-item'>
-            <Contact contact={this.state.ctx[1]}/>
-          </div>
-        </div>
+            <ContactList contactList={this.state.ctx}/>
     );
   }
 }
