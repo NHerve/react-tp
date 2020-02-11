@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ContactList from './Components/ContactList'
+import ClickEventListener from './Components/ClickEventComponent/ClickEventListener'
 
 class App extends Component {
 
@@ -20,9 +21,13 @@ class App extends Component {
     }]
   }
 
-  render(){
+  render(){  
     return (
-            <ContactList contactList={this.state.ctx}/>
+            // <ContactList contactList={this.state.ctx}/>
+            <div>
+              <ClickEventListener></ClickEventListener>
+            </div>
+
     );
   }
 }
